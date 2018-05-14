@@ -1,0 +1,16 @@
+../elements/standard/strip.cc	"../elements/standard/strip.hh"	Strip-Strip
+../elements/standard/discard.cc	"../elements/standard/discard.hh"	Discard-Discard
+../elements/userlevel/fromdevice.cc	"../elements/userlevel/fromdevice.hh"	FromDevice-FromDevice
+../elements/userlevel/fakepcap.cc	"../elements/userlevel/fakepcap.hh"	
+../elements/ip/ipclassifier.cc	"../elements/ip/ipclassifier.hh"	IPClassifier-IPClassifier
+../elements/ip/ipfilter.cc	"../elements/ip/ipfilter.hh"	IPFilter-IPFilter
+../elements/userlevel/controlsocket.cc	"../elements/userlevel/controlsocket.hh"	ControlSocket-ControlSocket
+../elements/standard/alignmentinfo.cc	<click/standard/alignmentinfo.hh>	AlignmentInfo-AlignmentInfo
+../elements/standard/classification.cc	"../elements/standard/classification.hh"	
+../elements/userlevel/netmapinfo.cc	"../elements/userlevel/netmapinfo.hh"	
+../elements/ip/checkipheader.cc	"../elements/ip/checkipheader.hh"	CheckIPHeader-CheckIPHeader
+../elements/ip/ipprint.cc	"../elements/ip/ipprint.hh"	IPPrint-IPPrint
+../elements/userlevel/kernelfilter.cc	"../elements/userlevel/kernelfilter.hh"	KernelFilter-KernelFilter
+../elements/standard/classifier.cc	"../elements/standard/classifier.hh"	Classifier-Classifier
+g++ -g -O2 -W -Wall  -o click -rdynamic aggregatefilter.o timefilter.o hostetherfilter.o checkipheader.o checkipheader2.o firewall.o ipclassifier.o ipencap.o ipfieldinfo.o ipfilter.o ipnameinfo.o ipprint.o classification.o classifier.o discard.o flowinfo.o strip.o controlsocket.o fakepcap.o fromdevice.o kernelfilter.o netmapinfo.o todevice.o elements.o click.o libclick.a `../bin/click-buildtool --otherlibs`
+../../udf/firewall.cc	"../../udf/firewall.hh"	Firewall-Firewall
